@@ -62,10 +62,10 @@
 
       // Error and info messages:
       messages: {
-        maxNumberOfFiles: 'Maximum number of files exceeded',
-        acceptFileTypes: 'File type not allowed',
-        maxFileSize: 'File is too large',
-        minFileSize: 'File is too small'
+        maxNumberOfFiles: 'Превышено максимальное количество файлов',
+        acceptFileTypes: 'Тип файла не допускается',
+        maxFileSize: 'Файл слишком большой',
+        minFileSize: 'Файл слишком мал'
       }
     },
 
