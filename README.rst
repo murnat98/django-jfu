@@ -23,7 +23,9 @@ Demo_
 Installation
 ------------
 
-1. ``pip install git+https://github.com/murnat98/django-jfu.git@master``.
+<<<<<<< HEAD
+1. ``pip install git+https://github.com/murnat98/django-jfu.git``.
+>>>>>>> 275c9864e35a780cbaa66b06d5551dc533c754db
 2. Add 'jfu' to ``INSTALLED_APPS`` in your project settings.py file.
 3. Add 'django.core.context_processors.request' and 'django.core.context_processors.static' to ``TEMPLATE_CONTEXT_PROCESSORS`` in settings.py.
 4. Run `python manage.py collectstatic`.
