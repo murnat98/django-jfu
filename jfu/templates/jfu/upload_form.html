@@ -348,14 +348,18 @@ Bootstrap CSS Toolkit styles
                         {{ JQ_OPEN }} if (file.deleteWithCredentials) { %} 
                             data-xhr-fields='{"withCredentials":true}'{% } 
                         {{ JQ_CLOSE }}>
-                    <i class="glyphicon glyphicon-trash"></i>
-                    <span>Delete</span>
+                    {% block JS_DOWNLOAD_TEMPLATE_DELETE_VALUE %}
+                        <i class="glyphicon glyphicon-trash"></i>
+                        <span>Delete</span>
+                    {% endblock %}
                 </button>
                 <input type="checkbox" name="delete" value="1" class="toggle">
             {{ JQ_OPEN }} } else { {{ JQ_CLOSE }}
                 <button class="btn btn-warning cancel">
-                    <i class="glyphicon glyphicon-ban-circle"></i>
-                    <span>Cancel</span>
+                    {% block JS_DOWNLOAD_TEMPLATE_CANCEL_VALUE %}
+                        <i class="glyphicon glyphicon-ban-circle"></i>
+                        <span>Cancel</span>
+                    {% endblock %}
                 </button>
             {{ JQ_OPEN }} } {{ JQ_CLOSE }}
         </td>
