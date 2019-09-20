@@ -325,7 +325,9 @@ Bootstrap CSS Toolkit styles
 
             {% block JS_DOWNLOAD_TEMPLATE_ERROR %}
                 {{ JQ_OPEN }} if (file.error) { {{ JQ_CLOSE }}
-                    <div><span class="label label-danger">Error</span> {{ JQ_OPEN }}=file.error{{ JQ_CLOSE }}</div>
+                    {% block jS_DOWNLOAD_TEMPLATE_ERROR_VALUE %}
+                        <div><span class="label label-danger">Error</span> {{ JQ_OPEN }}=file.error{{ JQ_CLOSE }}</div>
+                    {% endblock %}
                 {{ JQ_OPEN }} } {{ JQ_CLOSE }}
             {% endblock %}
 
